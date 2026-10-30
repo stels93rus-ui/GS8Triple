@@ -176,7 +176,7 @@ class MainActivity : Activity() {
             status.text = "Shizuku не запущен. Открой Shizuku, запусти службу и вернись сюда."
             return
         }
-        if (Shizuku.isPreV11) {
+        if (Shizuku.isPreV11()) {
             status.text = "Установленная версия Shizuku слишком старая. Нужна API v11 или новее."
             return
         }
